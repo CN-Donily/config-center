@@ -29,4 +29,4 @@ mybatis-plus:
     map-underscore-to-camel-case: true
     cache-enabled: false
   mapper-locations: classpath:mybatis/mapper/*.xml
-  type-aliases-package: com.lxy.entity
+  type-aliases-package: com.lxy.model
