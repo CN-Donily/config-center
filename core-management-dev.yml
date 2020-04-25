@@ -31,7 +31,7 @@ spring:
       min-evictable-idle-time-millis: 300000 #配置连接在池中的最小生存时间
       max-evictable-idle-time-millis: 400000 #配置连接在池中的最大生存时间
       filters: stat,wall  #监控统计的stat,以及防sql注入的wall
-      aop-patterns: com.lxy.*  #Spring监控AOP切入点，如x.y.z.service.*,配置多个英文逗号分隔
+      aop-patterns: com.lxy.service.*  #Spring监控AOP切入点，如x.y.z.service.*,配置多个英文逗号分隔
       connection-properties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000   #通过connectProperties属性来打开mergeSql功能；慢SQL记录
       web-stat-filter:
         enabled: true    #是否启用StatFilter默认值true
